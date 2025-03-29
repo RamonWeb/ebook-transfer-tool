@@ -1,19 +1,36 @@
 # eBook Transfer Tool - Kindle & Tolino
 
-![Programm-Icon](icons/ebook_icon_48x48.png)
+![Programm-Screenshot](images/background.jpg)
 
-Überträgt eBooks (.epub) via:
-- 📧 E-Mail an Kindle-Adressen
-- 💾 Direkt auf Tolino-Geräte (USB)
+## 📖 Inhaltsverzeichnis
+- [Funktionsübersicht](#-funktionsübersicht)
+- [Systemvoraussetzungen](#-systemvoraussetzungen)
+- [Installation](#-installation)
+- [Bedienungsanleitung](#-bedienungsanleitung)
+- [Konfiguration](#-konfiguration)
+- [Häufige Probleme](#-häufige-probleme)
+- [Entwicklerinformationen](#-entwicklerinformationen)
 
-## Funktionen
-- Automatische Geräteerkennung
-- Zwei-Wege-Übertragung (Kindle/Tolino)
-- Vorschau der Dateien
-- Konfigurationsmanager
+## 🌟 Funktionsübersicht
+Überträgt EPUB-Dateien auf:
+- **Kindle-Geräte** per E-Mail (über SMTP)
+- **Tolino-Reader** per USB-Kopierfunktion
 
-## Installation
-```bash
-git clone https://github.com/ihrname/ebook-transfer-tool.git
-cd ebook-transfer-tool
-pip install -r requirements.txt
+Key Features:
+- 🔄 Automatische Geräteerkennung (Tolino)
+- ✉️ Zwei Kindle-Profile speicherbar
+- 📁 Dateivorschau mit Cover-Anzeige
+- ⚙️ Persistente Konfiguration
+
+## 💻 Systemvoraussetzungen
+| Komponente    | Anforderung               |
+|--------------|--------------------------|
+| Betriebssystem | Windows 10/11, macOS 10.15+, Linux mit USB-Zugriff |
+| Python       | Version 3.8 oder höher    |
+| Speicherplatz | Mind. 50 MB freier Platz |
+
+## 📥 Installation
+1. Repository klonen:
+   ```bash
+   git clone https://github.com/ihrname/ebook-transfer-tool.git
+   cd ebook-transfer-tool
