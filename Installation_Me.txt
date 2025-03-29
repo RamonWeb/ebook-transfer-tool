@@ -1,0 +1,90 @@
+1. Python-Installationsdatei herunterladen
+Gehe auf die offizielle Python-Website.
+Lade die neueste Version herunter, die als "Recommended" markiert ist.
+
+2. Python-Installationsprogramm starten
+Öffne die heruntergeladene Datei (python-<version>-amd64.exe).
+Wähle "Add Python to PATH" am unteren Rand des Installationsfensters aus (sehr wichtig!).
+Klicke auf "Customize installation", wenn du die Installation anpassen möchtest (empfohlen).
+
+
+https://www.python.org/downloads/
+
+
+
+
+Voraussetzungen
+Python und pip müssen installiert sein (Python 3.7 oder höher wird empfohlen).
+Installation von Pillow
+Terminal oder Eingabeaufforderung öffnen:
+
+Drücke Win + R, tippe cmd, und drücke Enter.
+Installationsbefehl ausführen: Gib den folgenden Befehl ein und drücke Enter:
+
+bash
+Code kopieren
+
+pip install pillow
+Überprüfung der Installation: Nach der Installation kannst du überprüfen, ob Pillow erfolgreich installiert wurde, indem du in der Eingabeaufforderung Folgendes eingibst:
+
+bash
+Code kopieren
+
+python -m pip show pillow
+Das sollte dir eine Ausgabe mit der Version und anderen Details zu Pillow zeigen.
+
+Fehlerbehebung
+pip wird nicht erkannt: Stelle sicher, dass Python und pip korrekt in den Umgebungsvariablen konfiguriert sind. Führe z. B. Python mit python --version aus, um zu prüfen, ob es funktioniert.
+
+Falls nicht, installiere Python neu und wähle die Option "Add Python to PATH" während der Installation.
+Upgrade von pip: Wenn du Probleme hast, Pillow zu installieren, aktualisiere pip:
+
+bash
+Code kopieren
+
+python -m pip install --upgrade pip
+Testen von Pillow
+Nach der Installation kannst du testen, ob Pillow funktioniert:
+
+Starte Python in der Konsole:
+bash
+Code kopieren
+
+python
+
+Gib folgendes ein:
+python
+Code kopieren
+
+from PIL import Image
+print("Pillow ist erfolgreich installiert!")
+
+Wenn keine Fehlermeldung angezeigt wird, ist Pillow korrekt installiert.
+
+
+
+2. Unterdrücken des Terminalfensters bei EXE-Erstellung
+Wenn du das Programm in eine .exe-Datei konvertierst (z. B. mit pyinstaller), kannst du eine Option verwenden, um das Terminalfenster zu vermeiden.
+
+Installation von PyInstaller:
+bash
+Code kopieren
+
+pip install pyinstaller
+
+Erstellen der .exe-Datei ohne Terminalfenster:
+Verwende die Option --noconsole beim Erstellen der .exe:
+
+bash
+Code kopieren
+
+pyinstaller --noconsole --onefile dein_script.py
+
+Erklärung der Optionen:
+--noconsole: Unterdrückt das Terminalfenster.
+--onefile: Verpackt alles in eine einzige .exe.
+Nach diesem Schritt wird das Programm als eigenständige Anwendung ohne Terminalfenster ausgeführt.
+
+3. Manuelles Verhindern in der Entwicklungsphase
+Falls du das Skript weiterhin aus einer IDE oder durch Doppelklick startest, bleibt das Terminal standardmäßig sichtbar, außer du verwendest .pyw.
+
