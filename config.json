@@ -1,0 +1,12 @@
+{
+    "source_folder": "",
+    "sent_folder": "",
+    "smtp_server": "",
+    "smtp_port": 587,
+    "username": "",
+    "password": "",
+    "kindle1": "",
+    "kindle2": "",
+    "active_kindle": "kindle1",
+    "tolino_enabled": false
+}
