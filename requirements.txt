@@ -1,0 +1,14 @@
+# Core-Bibliotheken
+pillow==10.3.0  # Bildverarbeitung (für Icons & Hintergründe)
+pytest==8.1.1    # Für Tests (optional)
+
+# Email-Funktionalität
+secure-smtplib==0.1.1  # Sichere SMTP-Verbindungen
+email-validator==2.1.1  # Email-Formatprüfung
+
+# Plattformspezifisch
+pywin32==306; sys_platform == 'win32'  # Windows-Integration
+pyobjc==10.2; sys_platform == 'darwin'  # macOS-Unterstützung
+
+# USB-Zugriff (für Tolino)
+pyusb==1.3.0  # USB-Geräteerkennung
