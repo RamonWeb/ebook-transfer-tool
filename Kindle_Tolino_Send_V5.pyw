@@ -79,7 +79,7 @@ def detect_tolino() -> Optional[str]:
     for mount_point in possible_mount_points:
         if os.path.exists(mount_point):
             # Suche nach dem Download-Ordner
-            for folder_name in ['download', 'Download']:
+            for folder_name in ['downloads', 'Downloads']:
                 download_path = os.path.join(mount_point, folder_name)
                 if os.path.isdir(download_path):
                     return download_path
