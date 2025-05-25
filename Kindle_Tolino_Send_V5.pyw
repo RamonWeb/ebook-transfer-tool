@@ -69,7 +69,7 @@ def detect_tolino() -> Optional[str]:
     else:
         # Linux und andere Unix-Systeme
         possible_mount_points.extend([
-            '/media/' + os.getenv('USER') + '/TOLINO',
+            '/media/' + os.getenv('USER') + '/tolino',
             '/media/TOLINO',
             '/media/Tolino',
             '/run/media/' + os.getenv('USER') + '/TOLINO',
